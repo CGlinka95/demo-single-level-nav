@@ -22,6 +22,28 @@ ul.menu a {
     display: block;
 }
 
+ul.menu a:hover,
+ul.menu a:active {
+    color: #39ff14;
+}
+
+ul.menu a:hover svg,
+ul.menu a:hover svg path,
+ul.menu a:hover svg rect {
+    fill: #39ff14;
+}
+
+svg {
+    width: 1.25rem;
+}
+
+svg,
+svg path,
+svg rect,
+svg polygon {
+    fill: #f5f5f5;
+}
+
 @media only screen and (min-width: 480px) {
     ul.menu {
         display: flex;
@@ -35,7 +57,7 @@ ul.menu a {
         flex-basis: auto;
 
         /* Use shorthand for flex (flex-grow, flex-shrink, flex-basis) */
-        flex: 1 0 auto;
+        /* flex: 1 0 auto; */
         text-align: center;
     }
 }
